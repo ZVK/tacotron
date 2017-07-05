@@ -11,8 +11,8 @@ class Hyperparams:
     sanity_check = True
     
     # data
-    text_file = 'WEB/text.csv'
-    sound_fpath = 'WEB'
+    text_file = '/root/zvk/datasets/WEB/text.csv'
+    sound_fpath = '/root/zvk/datasets/WEB'
     max_len = 100 if not sanity_check else 30 # maximum length of text
     min_len = 10 if not sanity_check else 20 # minimum length of text
     
