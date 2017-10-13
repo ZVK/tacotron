@@ -11,8 +11,8 @@ class Hyperparams:
     sanity_check = True
     
     # data
-    text_file = '/root/datasets/bible/text.csv'
-    sound_fpath = '/root/datasets/bible'
+    text_file = '/home/ubuntu/datasets/bible/text.csv'
+    sound_fpath = '/home/ubuntu/datasets/bible'
     max_len = 100 if not sanity_check else 30 # maximum length of text
     min_len = 10 if not sanity_check else 20 # minimum length of text
     
