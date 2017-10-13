@@ -11,8 +11,8 @@ class Hyperparams:
     sanity_check = True
     
     # data
-    text_file = '/root/zvk/datasets/WEB/text.csv'
-    sound_fpath = '/root/zvk/datasets/WEB'
+    text_file = '/root/datasets/bible/text.csv'
+    sound_fpath = '/root/datasets/bible'
     max_len = 100 if not sanity_check else 30 # maximum length of text
     min_len = 10 if not sanity_check else 20 # minimum length of text
     
@@ -46,7 +46,7 @@ class Hyperparams:
     num_samples = 32
     
     # etc
-    num_gpus = 4 # If you have multiple gpus, adjust this option, and increase the batch size
+    num_gpus = 1 # If you have multiple gpus, adjust this option, and increase the batch size
                  # and run `train_multiple_gpus.py` instead of `train.py`.
     target_zeros_masking = False # If True, we mask zero padding on the target, 
                                  # so exclude them from the loss calculation.     
